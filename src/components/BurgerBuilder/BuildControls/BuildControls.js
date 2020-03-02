@@ -5,7 +5,7 @@ import BuildControl from './BuildControl/BuildControl'
 const buildControls = (props) => {
 
   const ingredients = props.ingredients.map((ingredient) => {
-    return <BuildControl label={ingredient.label} />
+    return <BuildControl label={ingredient.label} count={ingredient.count} handleLess={props.handleLess} handlemore={props.handlemore} />
   })
 
   return (
